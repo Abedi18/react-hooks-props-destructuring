@@ -2,10 +2,11 @@ import React from "react";
 import MovieCard from "./MovieCard";
 
 function App() {
-  const title = "Mad Max";
-  const posterURL =
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn1OTYGz2GDC1XjA9tirh_1Rd571yE5UFIYsmZp4nACMd7CCHM";
-  const genresArr = ["Action", "Adventure", "Science Fiction", "Thriller"];
+  const {title, genresArr} = {
+    title: "Mad Max",
+    posterURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn1OTYGz2GDC1XjA9tirh_1Rd571yE5UFIYsmZp4nACMd7CCHM",
+    genresArr: ["Action", "Adventure", "Science Fiction", "Thriller"]
+  };
 
   return (
     <div className="App">
@@ -15,3 +16,5 @@ function App() {
 }
 
 export default App;
+
+
